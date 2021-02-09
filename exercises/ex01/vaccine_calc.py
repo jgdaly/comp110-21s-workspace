@@ -1,6 +1,6 @@
 """A vaccination calculator."""
 
-__author__ = "YOUR PID HERE"
+__author__ = "730356913"
 
 # The datetime data type is imported from the datetime library.
 # A datetime object models a specific date and time.
@@ -18,3 +18,8 @@ from datetime import timedelta
 
 
 # Begin your solution here...
+today: datetime = datetime.today()
+print(today.strftime("%B %d, %Y"))
+fortnight: timedelta = timedelta(7 + 7)
+future: datetime = today + fortnight
+print(future.strftime("%B %d, %Y"))
