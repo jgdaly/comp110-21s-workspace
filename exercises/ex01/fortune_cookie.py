@@ -15,7 +15,7 @@ from random import randint
 # Begin your solution here...
 
 print("Your fortune cookie says...")
-a: int = (randint(1,100))
+a: int = (randint(1, 100))
 if a <= 25:  
     print("You will get a pet this year")
 else:
@@ -24,5 +24,6 @@ else:
     else: 
         if a <= 75:
             print("Your mom wants you to call her")
-        else: print("There will be a gift in your future")
+        else: 
+            print("There will be a gift in your future")
 print("Now, go spread positive vibes!")

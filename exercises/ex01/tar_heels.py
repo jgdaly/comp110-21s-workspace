@@ -13,4 +13,3 @@ elif user_num % 7 == 0:
     print("HEELS")
 else:
     print("CAROLINA")
-
