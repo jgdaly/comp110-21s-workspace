@@ -9,14 +9,17 @@ def main() -> None:
     print(tar_heels(choice))
 
 
-def tar_heels(choice: int) -> str: 
-    if (choice % 2 == 0) and (choice % 7 == 0):
-        print("TAR HEELS")
-    elif choice % 2 == 0:
-        print("TAR")
-    elif choice % 7 == 0:
-        print("HEELS")
+def tar_heels(x: int) -> str:
+    """A little logical puzzle!"""
+    if (x % 2 == 0) and (x % 7 == 0):
+        return("TAR HEELS")
+    elif x % 2 == 0:
+        return("TAR")
+    elif x % 7 == 0:
+        return("HEELS")
     else:
-        print("CAROLINA")
+        return("CAROLINA")
+
+
 if __name__ == "__main__":
     main()

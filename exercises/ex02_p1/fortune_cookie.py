@@ -7,13 +7,13 @@ __author__ = "730356913"
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
-    
+    print("Your fortune cookie says...")
     print(fortune_cookie())
+    print("Now, go spread positive vibes!")
 
 
-
-# TODO 1: Define your fortune_cookie function here.
-def fortune_cookie() -> str:
+def fortune_cookie() -> str: 
+    """A good vibes fortune cookie!"""   
     a: int = (randint(1, 100))
     if a <= 25:  
         return ("You will get a pet this year")
@@ -27,5 +27,7 @@ def fortune_cookie() -> str:
                 return ("There will be a gift in your future")
 # Python Idiom for "starting" the program when run as a module.
 # The special dunder variable __name__ will be "__main__" when run as module. 
+
+
 if __name__ == "__main__":
     main()
